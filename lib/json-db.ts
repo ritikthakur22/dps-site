@@ -169,6 +169,18 @@ function createSeedData(): DatabaseSchema {
         last_login_at: null,
         created_at: now,
       },
+      {
+        id: 2,
+        username: "ritik",
+        display_name: "Ritik Thakur",
+        // bcrypt hash for password "admin123"
+        password_hash: "$2b$10$FPYjy5k1Enya2pwMsQ4FneMZyubhszayC3ZJ45uowyHAvGN.7LJo2",
+        role: "owner",
+        active: true,
+        session_version: 1,
+        last_login_at: null,
+        created_at: now,
+      },
     ],
     activity_log: [
       { id: 1, user_id: 1, who: "System", action: "Initialized local JSON database", at: now },

@@ -28,6 +28,26 @@ export default async function LoginPage() {
         <p className="a-hint" style={{ marginTop: 16 }}>
           Forgot your password? Ask the website owner to set a new one for you.
         </p>
+        {!process.env.DATABASE_URL && (
+          <div
+            style={{
+              marginTop: 18,
+              padding: "12px 14px",
+              background: "#eff6ff",
+              border: "1px solid #bfdbfe",
+              borderRadius: "8px",
+              fontSize: 13,
+              color: "#1e40af",
+              textAlign: "left",
+            }}
+          >
+            <strong style={{ display: "block", marginBottom: 4, color: "#1d4ed8" }}>
+              Local Login Credentials:
+            </strong>
+            <div>Username: <code style={{ background: "#dbeafe", padding: "2px 5px", borderRadius: 4 }}>admin</code> or <code style={{ background: "#dbeafe", padding: "2px 5px", borderRadius: 4 }}>ritik</code></div>
+            <div style={{ marginTop: 3 }}>Password: <code style={{ background: "#dbeafe", padding: "2px 5px", borderRadius: 4 }}>admin123</code></div>
+          </div>
+        )}
       </div>
     </main>
   );

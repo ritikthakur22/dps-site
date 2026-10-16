@@ -69,6 +69,10 @@ export default function Header({
             )}
             <span className="topbar-sep">·</span>
             <a href={`mailto:${email}`}>{email}</a>
+            <span className="topbar-sep">·</span>
+            <a href="/admin" className="topbar-admin-badge" title="School Administration Portal">
+              Staff Portal
+            </a>
           </div>
         </div>
       </div>
@@ -125,6 +129,13 @@ export default function Header({
                   💬 Chat on WhatsApp
                 </a>
               )}
+              <a
+                href="/admin"
+                className="btn btn-outline"
+                style={{ width: "100%", justifyContent: "center", fontSize: 13, borderColor: "rgba(255,255,255,0.25)", color: "#ffffff" }}
+              >
+                🔐 Staff Admin Portal
+              </a>
             </div>
           </nav>
           <a href="/#admissions" className="btn btn-yellow header-cta">
