@@ -2,6 +2,9 @@
   "name": "daffodils-public-school-site",
   "version": "1.0.0",
   "private": true,
+  "description": "Full-stack Next.js web application and staff administrative portal for Daffodils Public School.",
+  "author": "Ritik Thakur <https://www.ritikthakur.com.np>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

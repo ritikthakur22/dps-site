@@ -1,4 +1,19 @@
-# Daffodils Public School website + admin panel
+# 🏫 Daffodils Public School Website & Admin Panel
+
+<div align="center">
+  <p><strong>A modern, full-stack Next.js web application and staff administrative portal for Daffodils Public School.</strong></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js 15" />
+    <img src="https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react&logoColor=white" alt="React 19" />
+    <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Neon-Postgres-00E599?style=flat-square&logo=postgresql&logoColor=black" alt="Neon Postgres" />
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License: MIT" /></a>
+    <a href="https://www.ritikthakur.com.np"><img src="https://img.shields.io/badge/Author-Ritik%20Thakur-blue?style=flat-square" alt="Author: Ritik Thakur" /></a>
+  </p>
+</div>
+
+---
 
 One Next.js 15 app, two addresses:
 
@@ -91,3 +106,10 @@ middleware.ts          admin subdomain routing and login guard
 db/schema.sql          tables (run with npm run db:migrate)
 scripts/               migrate, create-admin
 ```
+
+## 📄 License & Attribution
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+Developed with ❤️ by [Ritik Thakur](https://www.ritikthakur.com.np).
+
