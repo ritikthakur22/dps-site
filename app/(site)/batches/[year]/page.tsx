@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
@@ -41,9 +42,9 @@ export default async function BatchPage({ params }: Props) {
       <main>
         <section className="page-head">
           <div className="wrap">
-            <a href="/#batches" className="back">
+            <Link href="/#batches" className="back">
               ← Back to home
-            </a>
+            </Link>
             <h1>Class 10 batch {year} B.S.</h1>
             <p>All {students.length} students, ranked by SEE GPA.</p>
             {years.length > 1 && (

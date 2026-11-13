@@ -31,7 +31,7 @@ try {
   console.log("Building static export with GITHUB_PAGES=true...");
   execSync("npx next build", {
     stdio: "inherit",
-    env: { ...process.env, GITHUB_PAGES: "true" },
+    env: { ...process.env, GITHUB_PAGES: "true", NEXT_PUBLIC_BASE_PATH: "/dps-site" },
   });
 
   const outDir = path.join(rootDir, "out");

@@ -14,8 +14,10 @@ const securityHeaders = [
       // Next.js needs inline scripts for hydration; the school JSON-LD is inline too.
       "script-src 'self' 'unsafe-inline'",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://res.cloudinary.com",
+      "img-src 'self' data: blob: https://res.cloudinary.com https://images.unsplash.com",
       "font-src 'self' data:",
+      "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.facebook.com",
+      "media-src 'self' data: blob:",
       "connect-src 'self'",
       "frame-ancestors 'none'",
       "base-uri 'self'",

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import MobileActionBar from "./MobileActionBar";
 import { getWhatsAppUrl } from "@/lib/site";
+import { getBasePath } from "@/lib/images";
 
 const NAV = [
   { label: "About", href: "/#about" },
@@ -12,6 +13,7 @@ const NAV = [
   { label: "Class 10", href: "/#batches" },
   { label: "Students", href: "/#showcase" },
   { label: "Gallery", href: "/#gallery" },
+  { label: "Video Tour", href: "/#video-tour" },
   { label: "Admissions", href: "/#admissions" },
 ];
 
@@ -42,6 +44,8 @@ export default function Header({
     phone2 || phone1,
     "Namaste Daffodils Public School, I would like to inquire about admissions."
   );
+  const base = getBasePath();
+  const resolveHref = (path: string) => (path.startsWith("/") ? `${base}${path}` : path);
 
   return (
     <>
@@ -70,7 +74,7 @@ export default function Header({
             <span className="topbar-sep">·</span>
             <a href={`mailto:${email}`}>{email}</a>
             <span className="topbar-sep">·</span>
-            <a href="/admin" className="topbar-admin-badge" title="School Administration Portal">
+            <a href={resolveHref("/admin")} className="topbar-admin-badge" title="School Administration Portal">
               Staff Portal
             </a>
           </div>
@@ -78,7 +82,7 @@ export default function Header({
       </div>
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="wrap">
-          <a href="/" className="brand" aria-label="Daffodils Public School home">
+          <a href={resolveHref("/")} className="brand" aria-label="Daffodils Public School home">
             <Logo size={44} />
             <span className="brand-name">
               Daffodils
@@ -110,7 +114,7 @@ export default function Header({
           </div>
           <nav id="site-nav" aria-label="Main navigation" className={open ? "nav open" : "nav"}>
             {NAV.map((item) => (
-              <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
+              <a key={item.href} href={resolveHref(item.href)} onClick={() => setOpen(false)}>
                 {item.label}
               </a>
             ))}
@@ -130,7 +134,7 @@ export default function Header({
                 </a>
               )}
               <a
-                href="/admin"
+                href={resolveHref("/admin")}
                 className="btn btn-outline"
                 style={{ width: "100%", justifyContent: "center", fontSize: 13, borderColor: "rgba(255,255,255,0.25)", color: "#ffffff" }}
               >
@@ -138,7 +142,7 @@ export default function Header({
               </a>
             </div>
           </nav>
-          <a href="/#admissions" className="btn btn-yellow header-cta">
+          <a href={resolveHref("/#admissions")} className="btn btn-yellow header-cta">
             Book a campus visit
           </a>
         </div>

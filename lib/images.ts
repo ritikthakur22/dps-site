@@ -9,11 +9,22 @@ const PRESETS = {
 
 export type ImagePreset = keyof typeof PRESETS;
 
+export function getBasePath(): string {
+  if (typeof window !== "undefined" && window.location.pathname.startsWith("/dps-site")) {
+    return "/dps-site";
+  }
+  return process.env.NEXT_PUBLIC_BASE_PATH || (process.env.GITHUB_PAGES === "true" ? "/dps-site" : "");
+}
+
 export function imageUrl(url: string | null | undefined, preset: ImagePreset): string | null {
   if (!url) return null;
   const marker = "/image/upload/";
   if (url.startsWith("https://res.cloudinary.com/") && url.includes(marker)) {
     return url.replace(marker, `${marker}${PRESETS[preset]}/`);
+  }
+  if (url.startsWith("/")) {
+    const base = getBasePath();
+    return `${base}${url}`;
   }
   return url;
 }

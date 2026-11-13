@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react&logoColor=white" alt="React 19" />
     <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Neon-Postgres-00E599?style=flat-square&logo=postgresql&logoColor=black" alt="Neon Postgres" />
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License: MIT" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-Proprietary%20%2F%20Demonstration-red?style=flat-square" alt="License: Proprietary / Demonstration" /></a>
     <a href="https://www.ritikthakur.com.np"><img src="https://img.shields.io/badge/Author-Ritik%20Thakur-blue?style=flat-square" alt="Author: Ritik Thakur" /></a>
   </p>
 </div>
@@ -112,9 +112,14 @@ db/schema.sql          tables (run with npm run db:migrate)
 scripts/               migrate, create-admin
 ```
 
-## 📄 License & Attribution
+## 📄 License & Terms of Use
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+This project and source code are developed and owned exclusively by **Ritik Thakur** and provided under the [Daffodils Public School Software License & Demonstration Agreement](LICENSE).
 
-Developed with ❤️ by [Ritik Thakur](https://www.ritikthakur.com.np).
+- **Demonstration & Evaluation:** Permitted for prospective clients, institutions, and evaluators strictly to view and assess the demonstration deployment and codebase.
+- **Strict Prohibition:** Unauthorized copying, selling, reselling, sublicensing, commercial deployment, or redistribution to third parties without prior written authorization from the author is strictly prohibited.
+
+For commercial licensing, client deployments, or authorization inquiries, contact [Ritik Thakur](https://www.ritikthakur.com.np).
+
+Developed by [Ritik Thakur](https://www.ritikthakur.com.np).
 

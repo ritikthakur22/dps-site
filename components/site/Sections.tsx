@@ -437,3 +437,91 @@ export function News({ items }: { items: NewsItem[] }) {
     </section>
   );
 }
+
+export function VideoTour({ facebookUrl }: { facebookUrl?: string }) {
+  return (
+    <section id="video-tour" className="section video-tour-section">
+      <div className="wrap">
+        <div className="section-head">
+          <div className="eyebrow">Campus Video & Visual Tour</div>
+          <h2 className="h2">Experience Life and Learning at Daffodils.</h2>
+          <p className="lead" style={{ marginTop: 10 }}>
+            Take an inside look at our academic classrooms, modern science laboratories,
+            sports training at Bindhi, and annual cultural events.
+          </p>
+        </div>
+
+        <div className="video-tour-grid">
+          {/* Main Video Presentation Card */}
+          <div className="main-video-card">
+            <div className="video-embed-container">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/1v-zM2tU69s?rel=0&modestbranding=1"
+                title="Daffodils Public School Janakpur Campus Tour"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="video-iframe"
+              />
+            </div>
+            <div className="video-card-meta">
+              <div className="video-card-badge">🎥 Official Campus Showcase</div>
+              <h3>Murli Chowk Campus Tour & Student Facilities</h3>
+              <p>
+                A visual journey through Daffodils Public School in Janakpurdham, showcasing
+                air-conditioned smart classrooms, computer and science laboratories, safe transit,
+                and dedicated teachers.
+              </p>
+            </div>
+          </div>
+
+          {/* Video Tour Features & Media Links */}
+          <div className="video-highlights-column">
+            <div className="video-feature-box">
+              <div className="feature-icon-badge" aria-hidden="true">🏛️</div>
+              <div>
+                <h4>Smart Classrooms & Daily Assembly</h4>
+                <p>Air-conditioned, modern learning environments fostering concentration, respect, and character.</p>
+              </div>
+            </div>
+
+            <div className="video-feature-box">
+              <div className="feature-icon-badge" aria-hidden="true">🔬</div>
+              <div>
+                <h4>Science & Computer Laboratories</h4>
+                <p>Hands-on experiments in biology, chemistry, physics, and computer literacy from primary to SEE board.</p>
+              </div>
+            </div>
+
+            <div className="video-feature-box">
+              <div className="feature-icon-badge" aria-hidden="true">⚽</div>
+              <div>
+                <h4>Dedicated Sports Complex at Bindhi</h4>
+                <p>Spacious athletic training grounds for football, basketball, table tennis, volleyball, and tournaments.</p>
+              </div>
+            </div>
+
+            <div className="video-feature-box">
+              <div className="feature-icon-badge" aria-hidden="true">🏆</div>
+              <div>
+                <h4>SEE Board Toppers & Cultural Day</h4>
+                <p>Celebrating board exam results with 4.0 GPAs, inter-school quiz victories, and performing arts.</p>
+              </div>
+            </div>
+
+            {facebookUrl && (
+              <a
+                href={`${facebookUrl}videos`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-navy"
+                style={{ marginTop: 8, justifyContent: "center" }}
+              >
+                Watch More Event Videos on Facebook ↗
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

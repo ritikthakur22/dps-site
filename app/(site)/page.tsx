@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
-import { About, Academics, Facilities, Hero, News } from "@/components/site/Sections";
+import { About, Academics, Facilities, Hero, News, VideoTour } from "@/components/site/Sections";
 import Batches from "@/components/site/Batches";
 import Showcase from "@/components/site/Showcase";
 import Gallery from "@/components/site/Gallery";
@@ -52,14 +53,15 @@ export default async function HomePage() {
               <Gallery photos={gallery.slice(0, GALLERY_PREVIEW)} />
               {gallery.length > GALLERY_PREVIEW && (
                 <div className="more-row">
-                  <a href="/gallery" className="btn btn-ink">
+                  <Link href="/gallery" className="btn btn-ink">
                     View all photos
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
           </section>
         )}
+        <VideoTour facebookUrl={settings.facebookUrl} />
         <News items={news} />
         <Admissions phone1={settings.phone1} phone2={settings.phone2} email={settings.email} />
       </main>

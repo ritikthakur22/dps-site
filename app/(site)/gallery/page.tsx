@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 import Gallery from "@/components/site/Gallery";
@@ -21,9 +22,9 @@ export default async function GalleryPage() {
       <main>
         <section className="page-head">
           <div className="wrap">
-            <a href="/#gallery" className="back">
+            <Link href="/#gallery" className="back">
               ← Back to home
-            </a>
+            </Link>
             <h1>Photo gallery</h1>
             <p>Campus, events, sports and celebrations at Daffodils.</p>
           </div>

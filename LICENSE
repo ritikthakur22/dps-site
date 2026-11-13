@@ -1,21 +1,26 @@
-MIT License
+# Daffodils Public School Website & Management Portal
+## Software License & Demonstration Agreement
 
-Copyright (c) 2026 Ritik Thakur
+Copyright (c) 2026 Ritik Thakur. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 1. Scope & Demonstration Rights
+This software, source code, database architecture, design systems, and administrative portal ("the Software") are developed and owned exclusively by Ritik Thakur.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to prospective clients, evaluators, and visitors to view, browse, and evaluate the demonstration deployment and associated source code strictly for personal evaluation and demonstration assessment purposes.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 2. Strict Restrictions & Prohibitions
+Without explicit prior written authorization and a commercial agreement executed by Ritik Thakur, you may NOT:
+
+1. **Sell, Resell, or Monetize:** Sell, rent, lease, sub-license, assign, redistribute, or commercially exploit this Software, website template, admin panel, or any derivative works to third parties or institutions.
+2. **Deploy for Commercial Use:** Deploy, host, or operate this codebase or derivative variations for any commercial, institutional, or client production use without an authorized commercial license from the author.
+3. **Rebranding & Attribution:** Remove, obscure, or alter any copyright notices, author attributions, or developer links attributed to Ritik Thakur.
+
+## 3. Commercial Licensing & Inquiries
+This project is an institutional production showcase developed by Ritik Thakur. For licensing inquiries, client site deployments, custom development, or authorization requests, contact:
+
+- **Author & Developer:** Ritik Thakur
+- **Portfolio & Contact:** https://www.ritikthakur.com.np
+- **Official Repository:** https://github.com/ritikthakur22/dps-site
+
+## 4. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
