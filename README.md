@@ -4,6 +4,7 @@
   <p><strong>A modern, full-stack Next.js web application and staff administrative portal for Daffodils Public School.</strong></p>
 
   <p>
+    <a href="https://ritikthakur22.github.io/dps-site/"><img src="https://img.shields.io/badge/GitHub_Pages-Live_Demo-success?style=flat-square&logo=github" alt="GitHub Pages" /></a>
     <img src="https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js 15" />
     <img src="https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react&logoColor=white" alt="React 19" />
     <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -12,6 +13,10 @@
     <a href="https://www.ritikthakur.com.np"><img src="https://img.shields.io/badge/Author-Ritik%20Thakur-blue?style=flat-square" alt="Author: Ritik Thakur" /></a>
   </p>
 </div>
+
+---
+
+🌐 **Live Demo (GitHub Pages):** [https://ritikthakur22.github.io/dps-site/](https://ritikthakur22.github.io/dps-site/)
 
 ---
 

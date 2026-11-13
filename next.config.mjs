@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
@@ -26,13 +28,20 @@ const securityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  experimental: {
-    // Photos are shrunk in the browser first; this is the upper limit for one save.
-    serverActions: { bodySizeLimit: "6mb" },
-  },
-  async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
-  },
+  images: { unoptimized: true },
+  ...(isGithubPages
+    ? {
+        output: "export",
+        basePath: "/dps-site",
+      }
+    : {
+        experimental: {
+          serverActions: { bodySizeLimit: "6mb" },
+        },
+        async headers() {
+          return [{ source: "/:path*", headers: securityHeaders }];
+        },
+      }),
 };
 
 export default nextConfig;

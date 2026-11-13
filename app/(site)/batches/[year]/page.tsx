@@ -6,10 +6,12 @@ import BatchList from "@/components/site/BatchList";
 import { getBatch, getSettings, getVisibleBatchYears } from "@/lib/content";
 
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
-export function generateStaticParams() {
-  return []; // built on first visit, then cached
+export async function generateStaticParams() {
+  const years = await getVisibleBatchYears().catch(() => [2081, 2080, 2079]);
+  const list = years.length ? years : [2081, 2080, 2079];
+  return list.map((y) => ({ year: String(y) }));
 }
 
 type Props = { params: Promise<{ year: string }> };
